@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <section class="main">
+      <div class="users">
+        <div class="card">
+          <img src="assets/picture/logo1.png">
+          <h4>Skenario 1</h4>
+          <p>Terjadi Insiden DDoS</p>
+          <button onclick="location.href='skenario1.html'">Masuk</button>
+        </div>
+        <div class="card">
+          <img src="assets/picture/logo2.png">
+          <h4>Skenario 2</h4>
+          <p>Terjadi insiden DDoS pada sistem bandara</p>
+          <button onclick="location.href='skenario2.html'">Masuk</button>
+        </div>
+        <div class="card">
+          <img src="assets/picture/logo3.png">
+          <h4>Skenario 3</h4>
+          <p>Terjadi insiden defacement pada web G20</p>
+          <button onclick="location.href='skenario3.html'">Masuk</button>
+        </div>
+        <div class="card">
+          <img src="assets/picture/logo4.png">
+          <h4>Skenario 4</h4>
+          <p>Terjadi insiden malware</p>
+          <button onclick="location.href='skenario4.html'">Masuk</button>
+        </div>
+        <div class="card">
+            <img src="assets/picture/logo5.png">
+            <h4>Skenario 5</h4>
+            <p>Terjadi insiden ransomware</p>
+            <button onclick="location.href='skenario5.html'">Masuk</button>
+        </div>
+      </div>
+
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Scoreboard</h1>
+          <table id="scenarios" class="table table-striped table-hover"></table>
+        </div>
+      </section>
+    </section>
+  </div>
+  <script src="assets/js/api.js"></script>
+</body>
+</html>

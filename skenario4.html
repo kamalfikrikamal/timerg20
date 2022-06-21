@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="UTF-8" />
   <title>Skenario 4</title>
-  <!-- Bootstrap core CSS -->
-  <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap"
-    rel="stylesheet"
-  />
-  <link href="asset/css/style.css" rel="stylesheet">
-  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
-
 <body>
-  <header id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          <h1><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Skenario 4</h1>
-        </div>
+  <div class="timer">
+    <header>
+      <div class="timer-buttons">
+        <button class="timer-button" data-seconds="300" type="button">
+          5 Menit
+        </button>
+        <button class="timer-button" data-seconds="600" type="button">
+          10 Menit
+        </button>
+        <button class="timer-button" data-seconds="1200" type="button">
+          20 Menit
+        </button>
+        <button class="timer-button" data-seconds="1800" type="button">
+          30 Menit
+        </button>
+        <button class="timer-button" data-seconds="3600" type="button">
+          60 Menit
+        </button>
+      </div>
+      <form id="form">
+        <input
+          type="text"
+          id="input"
+          autocomplete="off"
+          placeholder="Enter minutes"
+          maxlength="8"
+        />
+      </form>
+    </header>
+    <div class="bodies">
+      <img class="imgscen" src="assets/picture/Sce4.jpeg">
+      <div class="questions">
+        <h3>Skenario 4</h3>
+        <p>Dalam kegiatan G20 terjadi serangan malware yang menyebabkan perangkat salah satu delegasi terganggu. Serangan malware ini dikombinasikan dengan phising yang ditargetkan kepada salah satu perangkat peserta delegasi. Terjadinya serangan ini menyebabkan pihak yang tidak berwenang melakukan remote access terhadap perangkat korban.</p>
+        <br>
+        <p>Tahapan Before:</p>
+        <p>1.	Bagaimana institusi Anda melakukan upaya preventif terhadap potensi serangan Malware? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <p>2. Apakah institusi anda memiliki backup aset jika terjadi serangan Malware? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <br>
+        <p>Tahapan During:</p>
+        <p>1.	Bagaimana institusi Anda melakukan penanggulangan dan pemulihan terhadap insiden Malware? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <p>2.	Apakah institusi Anda memiliki prosedur formal/resmi dalam penanganan kasus insiden Malware? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <p>3. Apakah institusi anda memiliki prosedur perlindungan data terhadap serangan Malware? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <br>
+        <p>Tahapan After:</p>
+        <p>1.	Apakah Anda bersedia berbagi informasi terkait insiden siber yang terjadi di institusi Anda? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <p>2.	Informasi apa saja yang diizinkan untuk dibagi kepada BSSN untuk menganalisis dan menindak lanjuti insiden siber yang terjadi? Hal-hal apa saja yang perlu menjadi perhatian dalam praktik berbagi informasi insiden siber, khususnya bagi BSSN. (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+        <p>3.	Upaya apa yang dilakukan sebagai evaluasi agar insiden malware tidak terjadi kembali? (BSSN, BIN, POLRI, CSIRT, KOMINFO, PANITIA PELAKSANA)</p>
+      </div>
+      <div class="display">
+        <div class="display-remaining-time"></div>
+        <div class="display-end-time"></div>
+      </div>
+      <div class="button">
+        <button class="pause">Stop</button>
+        <button onclick="updateScenario({id : 4, scenario : 'Skenario 4'})">Selesai</button>
       </div>
     </div>
-  </header>
+  </div>
 
-  <section id="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9">
-          <!-- Website Overview-->
-          <div class="well dash-box" data-seconds="1200">
-            <h4>Mulai</h4>
-          </div>
-          <div class="display">
-            <div class="display-remaining-time"></div>
-            <div class="display-end-time"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
   <audio loop preload="auto" id="sound">
-    <source src="asset/sound/tick-tock.mp3" />
+    <source src="assets/sound/tick-tock.mp3" />
     Your browser does not support the
     <code>audio</code> element.
   </audio>
 
-  <script src="asset/js/script.js"></script>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="assets/js/timer.js"></script>
 </body>
-
 </html>
