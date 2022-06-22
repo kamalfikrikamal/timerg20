@@ -1,4 +1,4 @@
-const api_url = "http://localhost:8080/scenario";
+const api_url = "http://192.168.195.129:8080/scenario";
 
 getapi(api_url);
 
@@ -31,4 +31,16 @@ function show(data) {
   }
   // Setting innerHTML as tab variable
   document.getElementById("scenarios").innerHTML = tab;
+}
+
+async function reset() {
+  await fetch('http://192.168.195.129:8080/reset', {
+    method: 'PUT',
+    headers: {
+        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    }
+  })
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .then(window.location.href='index.html')
 }

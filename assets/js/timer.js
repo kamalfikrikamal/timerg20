@@ -109,7 +109,7 @@ async function updateScenario(data) {
   } else {
       status = "Berhasil"
   }
-  await fetch('http://localhost:8080/scenario?id='+data.id, {
+  await fetch('http://192.168.195.129:8080/scenario?id='+data.id, {
       method: 'PUT',
       body: new URLSearchParams({
           'skenario': data.scenario,

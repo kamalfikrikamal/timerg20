@@ -12,40 +12,53 @@
     <section class="main">
       <div class="users">
         <div class="card">
-          <img src="assets/picture/logo1.png">
-          <h4>Skenario 1</h4>
-          <p>Terjadi Insiden DDoS</p>
+          <div>
+            <img src="assets/picture/logo1.png">
+            <h4>Skenario 1</h4>
+            <p>Terjadi Insiden DDoS</p>
+          </div>
           <button onclick="location.href='skenario1.html'">Masuk</button>
         </div>
         <div class="card">
-          <img src="assets/picture/logo2.png">
-          <h4>Skenario 2</h4>
-          <p>Terjadi insiden DDoS pada sistem bandara</p>
+          <div>
+            <img src="assets/picture/logo2.png">
+            <h4>Skenario 2</h4>
+            <p>Terjadi insiden DDoS pada sistem bandara</p>
+          </div>
           <button onclick="location.href='skenario2.html'">Masuk</button>
         </div>
         <div class="card">
-          <img src="assets/picture/logo3.png">
-          <h4>Skenario 3</h4>
-          <p>Terjadi insiden defacement pada web G20</p>
+          <div>
+            <img src="assets/picture/logo3.png">
+            <h4>Skenario 3</h4>
+            <p>Terjadi insiden defacement pada web G20</p>
+          </div>
           <button onclick="location.href='skenario3.html'">Masuk</button>
         </div>
         <div class="card">
-          <img src="assets/picture/logo4.png">
-          <h4>Skenario 4</h4>
-          <p>Terjadi insiden malware</p>
+          <div>
+            <img src="assets/picture/logo4.png">
+            <h4>Skenario 4</h4>
+            <p>Terjadi insiden malware</p>
+          </div>
           <button onclick="location.href='skenario4.html'">Masuk</button>
         </div>
         <div class="card">
+          <div>
             <img src="assets/picture/logo5.png">
             <h4>Skenario 5</h4>
             <p>Terjadi insiden ransomware</p>
-            <button onclick="location.href='skenario5.html'">Masuk</button>
+          </div>
+          <button onclick="location.href='skenario5.html'">Masuk</button>
         </div>
       </div>
 
       <section class="attendance">
         <div class="attendance-list">
-          <h1>Scoreboard</h1>
+          <div class="bottom-top">
+            <h1>Scoreboard</h1>
+            <button onclick="reset()">Reset</button>
+          </div>
           <table id="scenarios" class="table table-striped table-hover"></table>
         </div>
       </section>
