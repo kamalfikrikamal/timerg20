@@ -10,22 +10,11 @@
   font-family: "Inconsolata", monospace;
 }
 body{
-  /* background: rgb(226, 226, 226); */
-  /* height: 100%; */
   background-image: url("../picture/Banner.jpg");
   font-family: "Inconsolata", monospace;
-  /* background-position: center center;
-  background-size: cover;
-  background-repeat: repeat; */
 }
-
-/* html {
-  font-size: 10px;
-} */
-
 .container{
   display: flex;
-  /* height: 100vh; */
 }
 
 /* MAin Section */
@@ -33,14 +22,7 @@ body{
   position: relative;
   padding: 20px;
   width: 100%;
-  /* background: #4AD489; */
 }
-/* .main-top{
-  display: flex;
-  width: 100%;
-  padding-left: 20px;
-  background: "#fff";
-} */
 .main .users{
   display: flex;
   width: 100%;
@@ -49,10 +31,8 @@ body{
 }
 .users .card{
   width: 25%;
-  /* height: 100%; */
   margin: 10px;
   border: 1px solid #1c5dbe;
-  /* background: #4c99de; */
   text-align: center;
   border-radius: 10px;
   padding: 10px;
@@ -60,12 +40,10 @@ body{
   justify-content: space-between;
   flex-direction: column;
   display: flex;
-  /* position: absolute; */
 }
 .users .card img{
   width: 70px;
   height: 70px;
-  /* border-radius: 50%; */
 }
 .users .card h4{
   text-transform: uppercase;
@@ -90,9 +68,6 @@ body{
 .users .card button{
   width: 100%;
   margin-top: 8px;
-  /* position: absolute;
-  padding: 6px 20px; */
-  /* bottom: 0px; */
   padding: 7px;
   cursor: pointer;
   border-radius: 10px;
@@ -182,7 +157,6 @@ table thead tr{
 }
 header {
   height: 10vh;
-  /* width: 100vw; */
   display: flex;
   flex: 1;
 }
@@ -286,14 +260,8 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 90vh; */
 }
 
 .display-end-time {
   font-size: 3rem;
 }
-
-/* ::selection {
-  color: var(--selection-color);
-  background-color: var(--selection-bg-color);
-} */
