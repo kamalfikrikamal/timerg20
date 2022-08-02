@@ -40,6 +40,16 @@ body{
   justify-content: space-between;
   flex-direction: column;
   display: flex;
+  /* background: green; */
+}
+.green-card{
+  background: lightgreen;
+}
+.amber-card{
+  background: #FFBF00;
+}
+.red-card{
+  background: red;
 }
 .users .card img{
   width: 70px;
@@ -71,7 +81,7 @@ body{
   padding: 7px;
   cursor: pointer;
   border-radius: 10px;
-  background: transparent;
+  background: #fff;
   border: 1px solid #1c5dbe;
 }
 .users .card button:hover{
