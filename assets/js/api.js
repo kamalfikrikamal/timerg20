@@ -1,4 +1,4 @@
-const api_url = "http://128.199.214.132:8080/scenario";
+const api_url = "http://139.59.247.100:8080/scenario";
 
 getapi(api_url);
 
@@ -34,7 +34,7 @@ function show(data) {
 }
 
 async function reset() {
-  await fetch('http://128.199.214.132:8080/reset', {
+  await fetch('http://139.59.247.100:8080/reset', {
     method: 'PUT',
     headers: {
         "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
