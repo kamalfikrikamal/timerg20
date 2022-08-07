@@ -43,3 +43,7 @@ async function reset() {
   .then(response => response.json())
   .then(json => window.location.href='index.html')
 }
+
+function penilaian() {
+  window.open('https://docs.google.com/spreadsheets/d/18bJljI3FJEDy0nKNtjqbyUCx1rhivXVPZayD9HHoyWo/edit?usp=sharing', '_blank');
+}

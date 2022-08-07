@@ -107,7 +107,22 @@ body{
   display: flex;
   width: 100%;
 }
-.bottom-top button{
+.bottom-top .score{
+  position: absolute;
+  right: 0;
+  margin-right: 130px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #1c5dbe;
+}
+.bottom-top .score:hover{
+  background: #1c5dbe;
+  color: #fff;
+  transition: 0.5s;
+}
+.bottom-top .reset{
   position: absolute;
   right: 0;
   margin-right: 30px;
@@ -115,10 +130,10 @@ body{
   border-radius: 10px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #1c5dbe;
+  border: 1px solid red;
 }
-.bottom-top button:hover{
-  background: #1c5dbe;
+.bottom-top .reset:hover{
+  background: red;
   color: #fff;
   transition: 0.5s;
 }
@@ -152,18 +167,6 @@ table thead tr{
 }
 .table tbody tr:last-of-type{
   border-bottom: 2px solid #1c5dbe;
-}
-.table button{
-  padding: 6px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #1c5dbe;
-}
-.table button:hover{
-  background: #1c5dbe;
-  color: #fff;
-  transition: 0.5rem;
 }
 .infrastructure{
   margin-top: 20px;
