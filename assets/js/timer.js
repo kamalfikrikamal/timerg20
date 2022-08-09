@@ -6,7 +6,11 @@ const form = document.querySelector("#form");
 const input = document.querySelector("#input");
 const remainingTime = document.querySelector(".display-remaining-time");
 const pause = document.querySelector(".pause");
+const mulai = document.querySelector(".mulai");
 let countdown;
+let tmpCountdown;
+let tmpSecond;
+let tmpRemainingSeconds;
 
 
 getDefaultTime("00:00");
@@ -23,6 +27,7 @@ function timer(seconds) {
   displayRemainingTime(seconds);
   countdown = setInterval(() => {
     const remainingSeconds = Math.round((then - Date.now()) / 1000);
+    tmpRemainingSeconds = remainingSeconds;
     if (remainingSeconds < 0) {
       clearInterval(countdown);
       return;
@@ -47,6 +52,7 @@ function displayRemainingTime(seconds) {
 
 function startTimer1() {
   sound.play();
+  tmpSecond = this.dataset.seconds;
   const seconds = this.dataset.seconds;
   timer(seconds);
 }
@@ -97,17 +103,22 @@ function startTimer2(e) {
 buttons.forEach((button) => button.addEventListener("click", startTimer1));
 form.addEventListener("submit", startTimer2);
 pause.addEventListener("click", function() {
+  tmpCountdown = countdown;
   clearInterval(countdown);
   sound.pause();
+})
+mulai.addEventListener("click", function() {
+  sound.play();
+  timer(tmpRemainingSeconds);
+  
 })
 
 async function updateScenario(data) {
   let status;
-  console.log(data);
   if(remainingTime.textContent === "00:00"){
-      status = "Gagal"
+      status = "Waktu Habis"
   } else {
-      status = "Berhasil"
+      status = "Selesai"
   }
   await fetch('http://139.59.247.100:8080/scenario?id='+data.id, {
       method: 'PUT',

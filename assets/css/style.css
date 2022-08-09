@@ -43,13 +43,16 @@ body{
   /* background: green; */
 }
 .green-card{
-  background: lightgreen;
+  background: transparent;
+  /* border: 1px solid lightgreen; */
 }
 .amber-card{
-  background: #FFBF00;
+  background: transparent;
+  /* border: 1px solid #FFBF00; */
 }
 .red-card{
-  background: red;
+  background: transparent;
+  /* border: 1px solid red; */
 }
 .users .card img{
   width: 70px;
@@ -198,6 +201,10 @@ header {
   background: #fff;
   border-radius: 5px;
 }
+.bodies .sceImg {
+  display: flex;
+  justify-content: center;
+}
 .bodies .button {
   display: flex;
   justify-content: center;
@@ -219,9 +226,10 @@ header {
 }
 .imgscen {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 35%;
   height: auto;
   border: 1px solid black;
 }
@@ -256,6 +264,14 @@ header {
 
 .timer-button:active {
   background-color: #1a0a38e3;
+}
+.imgInfra{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  border: 1px solid black;
 }
 
 form {
