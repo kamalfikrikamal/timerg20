@@ -29,6 +29,13 @@ body{
   background: #fff;
   border-radius: 10px;
 }
+.main .color-scen{
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 .users .card{
   width: 33%;
   margin: 10px;
@@ -42,17 +49,22 @@ body{
   display: flex;
   /* background: green; */
 }
-.green-card{
-  background: transparent;
-  /* border: 1px solid lightgreen; */
+.color:hover {
+  cursor: pointer;
 }
-.amber-card{
-  background: transparent;
-  /* border: 1px solid #FFBF00; */
-}
-.red-card{
-  background: transparent;
-  /* border: 1px solid red; */
+.color-scen .color{
+  width: 100%;
+  margin: 10px;
+  border: 1px solid #1c5dbe;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  background: lightgreen;
+  /* background: green; */
 }
 .users .card img{
   width: 70px;

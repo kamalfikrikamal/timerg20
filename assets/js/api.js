@@ -1,3 +1,6 @@
+const color = document.querySelector(".color");
+var el_up = document.getElementById("GFG_UP");
+
 const api_url = "http://139.59.247.100:8080/scenario";
 
 getapi(api_url);
@@ -47,3 +50,16 @@ async function reset() {
 function penilaian() {
   window.open('https://docs.google.com/spreadsheets/d/18bJljI3FJEDy0nKNtjqbyUCx1rhivXVPZayD9HHoyWo/edit?usp=sharing', '_blank');
 }
+
+color.addEventListener("click", function() {
+  if(el_up.innerHTML == "Skenario Hijau"){
+    this.style.background = '#FFBF00';
+    el_up.innerHTML = "Skenario Amber";
+  } else if(el_up.innerHTML == "Skenario Amber"){
+    this.style.background = 'red';
+    el_up.innerHTML = "Skenario Merah";
+  } else if(el_up.innerHTML == "Skenario Merah"){
+    this.style.background = 'lightgreen';
+    el_up.innerHTML = "Skenario Hijau";
+  }
+})
