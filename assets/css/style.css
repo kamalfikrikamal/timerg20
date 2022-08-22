@@ -64,7 +64,6 @@ body{
   flex-direction: column;
   display: flex;
   background: lightgreen;
-  /* background: green; */
 }
 .users .card img{
   width: 70px;
@@ -208,7 +207,7 @@ header {
   flex: 1;
 }
 .bodies {
-  margin: 20px 40px 40px 40px;
+  margin: 20px 40px 20px 40px;
   padding-top: 10px;
   background: #fff;
   border-radius: 5px;
@@ -253,6 +252,26 @@ header {
 .timer-buttons {
   display: flex;
   flex: 1;
+}
+.footer {
+  margin: 20px 40px 40px 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: lightgreen;
+  border-radius: 5px;
+  justify-content: center;
+}
+.footer-green {
+  background: lightgreen;
+}
+.footer-amber {
+  background: #FFBF00;
+}
+.footer-red {
+  background: red;
+}
+.footer h1{
+  text-align: center;
 }
 
 .timer-button {
